@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 
 export const AddCategory = ({ onNewCategory }) => {
@@ -9,6 +10,7 @@ export const AddCategory = ({ onNewCategory }) => {
 
   const onSubmit = (event) => {
     event.preventDefault();
+
     if (inputValue.trim().length <= 1) return;
     // setCategories((categories) => [inputValue, ...categories]);
 
